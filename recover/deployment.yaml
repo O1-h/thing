@@ -1,0 +1,24 @@
+# Milestone 1: set three replicas, then add health probes and resource requests.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-service
+  template:
+    metadata:
+      labels:
+        app: api-service
+    spec:
+      containers:
+      - name: api-service
+        image: frontier-recover:studio
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        env:
+        - name: STARTUP_DELAY_SECONDS
+          value: '6'

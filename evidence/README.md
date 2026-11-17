@@ -1,0 +1,2 @@
+# Evidence directory
+Capture your own observations here. The starter contains no fabricated logs. Commit selected text/JSON evidence explicitly with git add -f evidence/<file>, after checking for credentials. Never commit .env, kubeconfig or tokens. Milestone 1 uses recovery.json and requests.csv; Lab 12 uses image-tests.txt and localstack.json; Project 3 uses metrics, HPA, load and rate-limit evidence. Include command, timestamp, image tag, cluster version and source commit.

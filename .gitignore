@@ -1,0 +1,14 @@
+__pycache__/
+.venv/
+.env
+*.exe
+*.zip
+.lambda/
+evidence/*
+!evidence/.gitkeep
+!evidence/README.md
+kubeconfig*
+
+images/objects/
+images/sample.png
+images/local-function.json

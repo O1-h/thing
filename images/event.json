@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "frontier-media"
+        },
+        "object": {
+          "key": "uploads/sample.png"
+        }
+      }
+    }
+  ]
+}
